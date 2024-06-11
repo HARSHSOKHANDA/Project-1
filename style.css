@@ -1,0 +1,126 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.container{
+     background-image: url(images/wp2764221.webp);
+     min-height: 100vh;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border: 10px solid black;
+}
+.content{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.top-section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-transform: uppercase;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+}
+
+.top-section h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.top-section h3{
+    font-size: 30px;
+    text-align: end;
+}
+.image-container img{
+    width: 300px;
+    height: 310px;
+    mix-blend-mode: multiply;
+}
+.about_section{
+    margin-top: 50px;
+}
+
+.about_section h2{
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.about_section p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+}
+
+.biography_section{
+    margin: 50px 0;
+}
+.biography_section h4{
+    font-size: 30px;
+}
+.biography_section ul{
+    margin-top: 20px;
+    margin-left: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+footer{
+    margin-bottom: 20px;
+    font-size: 17px;
+    text-align: end;
+}
+
+@media (max-width: 786px){
+    .content{
+        margin: 0 20px;
+    }
+    .top-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .top-section h1{
+        margin-top: 10px;
+        font-size: 40px;
+    }
+    .top-section h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    .about_section h2{
+        font-size: 40px;
+    }
+    .biography_section h4{
+        font-size: 25px;
+    }
+    .biography_section{
+        ul{
+            line-height: normal;
+            text-align: justify;
+        }
+    }
+}
